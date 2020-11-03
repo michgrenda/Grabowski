@@ -1,0 +1,9 @@
+body {
+  /* =============== Variables =============== */
+  $body-color-primary: $color-dove-gray;
+  /* ===============    End    =============== */
+
+  color: $body-color-primary;
+
+  font-family: "Roboto", sans-serif;
+}

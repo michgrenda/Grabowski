@@ -1,0 +1,28 @@
+{
+  "name": "grabowski",
+  "version": "1.0.0",
+  "description": "Meble na wymiar Krzysztof Grabowski",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server",
+    "server": "nodemon dist/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michgrenda/Grabowski.git"
+  },
+  "author": "Michał Grenda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michgrenda/Grabowski/issues"
+  },
+  "homepage": "https://github.com/michgrenda/Grabowski#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {}
+}
