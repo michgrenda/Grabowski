@@ -1,0 +1,22 @@
+.information {
+  /* =============== Variables =============== */
+  $information-color-primary: $color-melrose;
+  /* ===============    End    =============== */
+  &__icon-wrapper {
+    padding: 60px 0;
+
+    text-align: center;
+  }
+
+  &__icon {
+    color: $information-color-primary;
+  }
+
+  &__icon-text {
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}

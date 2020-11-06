@@ -15,11 +15,11 @@
 
   background-color: $navbar-background-color-primary;
   color: $navbar-color-primary;
-  box-shadow: $navbar-box-shadow-values
-    transparentize(
-      $color: $navbar-accent-color-secondary,
-      $amount: $navbar-box-shadow-color-transparentize-amount
-    );
+  // box-shadow: $navbar-box-shadow-values
+  //   transparentize(
+  //     $color: $navbar-accent-color-secondary,
+  //     $amount: $navbar-box-shadow-color-transparentize-amount
+  //   );
   font-size: $navbar-font-size;
 
   &__panel {

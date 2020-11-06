@@ -1,17 +1,19 @@
 import React from "react";
 
-const Contact = () => {
+const Footer = () => {
   return (
-    <section>
+    <footer>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="contact">contact</div>
+            <div className="footer">
+              Meble na wymiar Krzysztof Grabowski 2020
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
-export default Contact;
+export default Footer;

@@ -2,11 +2,15 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="logo col-12">logo</div>
+    <section>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="logo">logo</div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
