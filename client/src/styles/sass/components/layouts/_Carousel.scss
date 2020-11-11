@@ -1,1 +1,14 @@
-
+.carousel-custom__module-carousel {
+  .carousel {
+    .control-next.control-arrow {
+      &:before {
+        border-left: 8px solid black;
+      }
+    }
+    .control-prev.control-arrow {
+      &:before {
+        border-right: 8px solid black;
+      }
+    }
+  }
+}

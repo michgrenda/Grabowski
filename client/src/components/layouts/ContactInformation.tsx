@@ -1,12 +1,12 @@
 import React from "react";
 
-const Logo: React.FC = () => {
+const Contact: React.FC = () => {
   return (
     <section>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <div className="logo">logo</div>
+            <div className="contact">contact</div>
           </div>
         </div>
       </div>
@@ -14,4 +14,4 @@ const Logo: React.FC = () => {
   );
 };
 
-export default Logo;
+export default Contact;

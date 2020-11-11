@@ -3,10 +3,12 @@ import React from "react";
 import Carousel from "../components/layouts/Carousel";
 import Information from "../components/layouts/Information";
 
-const HomeContainer = () => {
+const carouselImages: string[] = ["images/1.jpg", "images/2.jpg"];
+
+const HomeContainer: React.FC = () => {
   return (
     <>
-      <Carousel />
+      <Carousel images={carouselImages} />
       <Information />
     </>
   );

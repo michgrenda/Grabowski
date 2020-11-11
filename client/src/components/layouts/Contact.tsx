@@ -1,17 +1,7 @@
 import React from "react";
 
-const Contact = () => {
-  return (
-    <section>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="contact">contact</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+const Contact: React.FC = () => {
+  return <div></div>;
 };
 
 export default Contact;

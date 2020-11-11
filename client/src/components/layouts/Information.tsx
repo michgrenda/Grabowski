@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Information = () => {
+const Information: React.FC = () => {
   const classes = useStyles();
 
   return (

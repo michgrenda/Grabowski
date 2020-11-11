@@ -3,10 +3,13 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 // Components
 import Navbar from "./components/layouts/Navbar";
 import Logo from "./components/layouts/Logo";
-import Contact from "./components/layouts/Contact";
+import ContactInformation from "./components/layouts/ContactInformation";
 import Footer from "./components/layouts/Footer";
 // Pages
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Offer from "./pages/Offer";
+import Gallery from "./pages/Gallery";
 
 // Interfaces
 export interface Routes {
@@ -27,16 +30,19 @@ const routes: Routes[] = [
     path: "/about",
     text: "o nas",
     exact: true,
+    component: About,
   },
   {
     path: "/offer",
     text: "oferta",
     exact: true,
+    component: Offer,
   },
   {
     path: "/gallery",
     text: "galeria",
     exact: true,
+    component: Gallery,
   },
   {
     path: "/contact",
@@ -48,7 +54,7 @@ const routes: Routes[] = [
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <Contact />
+      <ContactInformation />
       <Logo />
       <Navbar routes={routes} />
       <main>

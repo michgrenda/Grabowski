@@ -1,30 +1,27 @@
 import React from "react";
 // Carousel
-import { Carousel as ModulesCarousel } from "react-responsive-carousel";
+import { Carousel as ModuleCarousel } from "react-responsive-carousel";
 
-const Carousel = () => {
+const Carousel: React.FC<{ images: string[] }> = (props) => {
   return (
     <section>
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="carousel-custom">
-              <ModulesCarousel
+              <ModuleCarousel
                 showStatus={false}
                 autoPlay={true}
                 infiniteLoop={true}
                 showThumbs={false}
+                className="carousel-custom__module-carousel"
               >
-                <div style={{ padding: 20, height: 150, color: "white" }}>
-                  1<p className="legend">Legend 1</p>
-                </div>
-                <div style={{ padding: 20, height: 150, color: "white" }}>
-                  2<p className="legend">Legend 2</p>
-                </div>
-                <div style={{ padding: 20, height: 150, color: "white" }}>
-                  3<p className="legend">Legend 3</p>
-                </div>
-              </ModulesCarousel>
+                {props.images.map((image, index) => (
+                  <div>
+                    <img src={image} alt={`${index}`} />
+                  </div>
+                ))}
+              </ModuleCarousel>
             </div>
           </div>
         </div>
